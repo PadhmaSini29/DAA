@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 
 class MultistageGraph:
-    def _init_(self):
+    def __init__(self):  # Corrected initialization method signature
         self.stages = [['Router 1', 'Router 2', 'Router 3'],  # stage 1
                        ['Switch 1', 'Switch 2', 'Switch 3'],  # stage 2
                        ['Firewall 1', 'Firewall 2', 'Firewall 3', 'Firewall 4'],  # stage 3
@@ -155,5 +155,5 @@ def main():
             st.error("Invalid source or destination node.")
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":  
     main()
